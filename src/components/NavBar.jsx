@@ -42,6 +42,7 @@ function Navbar() {
             <Link to="/" className="hover:text-blue-400 transition" onClick={() => setIsOpen(false)}>Home</Link>
             <Link to="/tos" className="hover:text-blue-400 transition" onClick={() => setIsOpen(false)}>Terms</Link>
             <Link to="/privacy" className="hover:text-blue-400 transition" onClick={() => setIsOpen(false)}>Privacy</Link>
+            <Link to="/eula" className="hover:text-blue-400 transition" onClick={() => setIsOpen(false)}>EULA</Link>
           </div>
         </motion.div>
       )}

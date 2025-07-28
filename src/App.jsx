@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
+import Eula from './pages/Eula';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/tos" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/eula" element={<Eula />} />
         </Routes>
       </motion.main>
       <Footer />

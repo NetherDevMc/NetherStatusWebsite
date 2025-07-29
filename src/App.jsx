@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
 import Eula from './pages/Eula';
-
+import AccountDelete from './pages/AccountDelete';
 function App() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-br from-gray-900 via-blue-950 to-purple-950 text-white">
@@ -23,6 +23,7 @@ function App() {
           <Route path="/tos" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/eula" element={<Eula />} />
+          <Route path="/account-delete" element={<AccountDelete />} />
         </Routes>
       </motion.main>
       <Footer />

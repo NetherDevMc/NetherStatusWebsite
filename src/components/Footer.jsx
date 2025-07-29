@@ -16,6 +16,7 @@ function Footer() {
           <Link to="/tos" className="hover:text-blue-400 transition">Terms of Service</Link>
           <Link to="/privacy" className="hover:text-blue-400 transition">Privacy Policy</Link>
           <Link to="/eula" className="hover:text-blue-400 transition">EULA</Link>
+          <Link to="/account-delete" className="hover:text-blue-400 transition">Account Deletion</Link>
           <a href="mailto:jenscollaert@icloud.com" className="hover:text-blue-400 transition">Contact</a>
         </div>
       </div>

@@ -1,10 +1,10 @@
 import React from 'react';
 import {
   FaUserSlash,
-  FaEnvelopeOpenText,
   FaCheckCircle,
   FaInfoCircle,
   FaExclamationTriangle,
+  FaMobileAlt,
 } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
@@ -19,6 +19,7 @@ export default function AccountDelete() {
       >
         <div className="absolute -top-12 -left-12 w-40 h-40 bg-blue-900 bg-opacity-30 rounded-full blur-2xl pointer-events-none" />
         <div className="absolute -bottom-16 -right-16 w-56 h-56 bg-blue-500 bg-opacity-20 rounded-full blur-3xl pointer-events-none" />
+        
         <div className="flex flex-col items-center text-center mb-10 relative z-10">
           <div className="bg-blue-800 bg-opacity-40 rounded-full p-4 mb-3 shadow-lg">
             <FaUserSlash className="text-5xl text-blue-400 drop-shadow-xl" />
@@ -27,14 +28,8 @@ export default function AccountDelete() {
             Delete your account
           </h1>
           <p className="text-gray-300 max-w-2xl text-lg mt-2">
-            If you wish to delete your <span className="font-semibold text-blue-200">NetherStatus</span> account, simply click the button below or send an email to{' '}
-            <a
-              href="mailto:support@netherstatus.net?subject=Delete%20my%20NetherStatus%20account&body=Hello%2C%20please%20delete%20my%20NetherStatus%20account.%20My%20registered%20email%20address%20is%3A%20"
-              className="text-blue-300 underline hover:text-blue-100 transition"
-            >
-              support@netherstatus.net
-            </a>{' '}
-            from your registered email address. You will receive a confirmation within 14 days.
+            If you want to delete your <span className="font-semibold text-blue-200">NetherStatus</span> account, you can now do so directly in the app under{' '}
+            <span className="text-blue-300 font-semibold">Settings &gt; Account</span>. The deletion is permanent and cannot be undone.
           </p>
         </div>
 
@@ -43,7 +38,7 @@ export default function AccountDelete() {
             icon={<FaInfoCircle className="text-blue-400 text-2xl" />}
             title="What will be deleted?"
             items={[
-              'Your profile and login information',
+              'Your profile and login data',
               'Your email address',
               'Your server list & app settings',
             ]}
@@ -54,7 +49,7 @@ export default function AccountDelete() {
             title="What may be kept (temporarily)?"
             items={[
               'Billing data (up to 7 years for legal compliance)',
-              'Support requests if relevant',
+              'Support messages if relevant',
             ]}
             bg="from-gray-800 to-blue-950"
           />
@@ -63,17 +58,15 @@ export default function AccountDelete() {
         <div className="flex items-center gap-2 bg-yellow-900/70 border-l-4 border-yellow-400 rounded-md px-4 py-3 mb-7 text-yellow-200 shadow">
           <FaExclamationTriangle className="text-xl" />
           <span>
-            <strong>Attention:</strong> Account deletion is permanent. This action cannot be undone.
+            <strong>Warning:</strong> Account deletion is permanent and cannot be undone.
           </span>
         </div>
 
         <div className="text-center mt-5 z-10 relative">
-          <a
-            href="mailto:jenscollaeret@icloud.com?subject=Delete%20my%20NetherStatus%20account&body=Hello%2C%20please%20delete%20my%20NetherStatus%20account.%20My%20registered%20email%20address%20is%3A%20"
-            className="bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-800 hover:to-blue-700 transition text-white font-bold py-4 px-10 rounded-full inline-flex items-center gap-2 shadow-xl text-lg tracking-wide"
-          >
-            <FaEnvelopeOpenText className="text-2xl" /> Request account deletion
-          </a>
+          <div className="inline-flex items-center gap-3 text-blue-300 text-lg font-semibold">
+            <FaMobileAlt className="text-2xl" />
+            Delete your account from the app
+          </div>
         </div>
       </motion.div>
     </section>

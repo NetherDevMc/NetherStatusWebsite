@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaApple, FaAndroid, FaServer, FaBell, FaUserShield, FaEuroSign, FaCheckCircle, FaRocket, FaSyncAlt, FaMobileAlt, FaStar } from 'react-icons/fa';
+import { FaApple, FaAndroid, FaServer, FaBell, FaUserShield, FaDollarSign, FaCheckCircle, FaRocket, FaSyncAlt, FaMobileAlt, FaStar } from 'react-icons/fa';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 function Home() {
@@ -257,7 +257,7 @@ function Home() {
                 <div className="text-center mb-6">
                   <h3 className={`text-2xl font-bold mb-4 text-${plan.textColor}`}>{plan.title}</h3>
                   <div className="flex items-center justify-center gap-2 mb-6">
-                    <FaEuroSign className="text-lg text-green-400" />
+                    <FaDollarSign className="text-lg text-green-400" />
                     <span className="text-4xl sm:text-5xl font-bold text-white">{plan.price}</span>
                     <span className="text-lg text-gray-400">/month</span>
                   </div>
